@@ -44,6 +44,7 @@ class LL{
         }
         System.out.print("Null");
     }
+    // delete
     public static void main(String []args){
         LL list = new LL();
         list.addFirst("a");
