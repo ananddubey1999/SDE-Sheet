@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .box {
+        display: grid;
+        grid-gap: 10px;
+        }
+        .box img{
+            object-fit: cover;
+            width: 100%;
+            border-radius: 5px;
+        }
+        @media screen and (min-width:768px) {
+            .box {
+                grid-template-columns: repeat(2,1fr) ;
+            }
+        }
+        @media screen and (min-width:1024px) {
+            .box{
+                grid-template-columns: repeat(3,1fr);
+            }
+            .box img:nth-of-type(3){
+                grid-column: 2/4;
+                grid-row: 1/3;
+            }        
+        }
+        
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Excercise-2.2</title>
+    </head>
+
+    <body>
+        <div class="box">
+            <img src="https://source.unsplash.com/collection/190727/800x600?1" alt="Image 1">
+            <img src="https://source.unsplash.com/collection/190727/800x600?2" alt="Image 2">
+            <img src="https://source.unsplash.com/collection/190727/800x600?3" alt="Image 3">
+            <img src="https://source.unsplash.com/collection/190727/800x600?4" alt="Image 4">
+            <img src="https://source.unsplash.com/collection/190727/800x600?5" alt="Image 5">
+            <img src="https://source.unsplash.com/collection/190727/800x600?6" alt="Image 6">
+            <img src="https://source.unsplash.com/collection/190727/800x600?7" alt="Image 7">
+            <img src="https://source.unsplash.com/collection/190727/800x600?8" alt="Image 8">
+            <img src="https://source.unsplash.com/collection/190727/800x600?9" alt="Image 9">
+        </div>
+    </body>
+
+</html>
