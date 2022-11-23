@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        /* select by tag Name */
+        div{
+            background-color: green;
+        }
+          /* Select by id tag  */
+          #div1{
+            background-color: red;
+          }
+          #div2{
+            background-color: blue;
+          }
+           /* Select by class */
+           .box{
+            background-color: yellow;
+           }
+           .demo{
+            background-color: brown; 
+           }
+    </style>
+    </head>
+    <body>
+        <div id="div1">this is a div 1</div>
+        <div id="div2">this is a div 2</div>
+        <div id="div3" class=" demo box">this is a div 3</div>
+    </body>
+</html>
+
+<!--  EXPLANATION-
+     1. agar kabh bhi 2 class ek sath call hota hai to wo class jada prefer hoga jo CSS me last me likha ho 
+    (means the 2 one it coukd be color or class)...
+     2. prefrence of tag is = id > class > tag name 
+     3.  class ek se jada bhi ho sakta hai (eg. demo box box2 demo2 )-->

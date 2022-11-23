@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* this is a target atribute to select the a tag  */
+    a[target]{
+        background: yellow;
+    }
+    a[target="_blank"]{
+        background: pink;
+    }
+    /* this is a title atribute to select the p tag ke ander title ke ander flower word */
+    [title~="flower"]{
+        background: red;
+    }
+    </style>
+</head>
+<body>
+    <h2> CSS Atribute Selector</h2>
+    <a href="https://www.google.com">Link 1</a>
+    <a href="https://www.google.com" target="_blank">Link 2</a>
+    <a href="https://www.google.com" target="_parent">Link 3</a>
+    <p title="rose flower">this para contain the word flower</p>
+    <p title="trees">this para does not contain the word flower</p>
+</body>
+</html>

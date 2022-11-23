@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Selector use in CSS</title>
+        <style>
+            /*for all <p> tag under div  */
+            div p{
+                background-color:yellow;
+            }
+            /* for that <p> tag which only in div (means naa hi uske ander tag ke ander aur na hi uske bahar)  */
+            div>p{
+                background-color: pink;
+            }
+            /* for jo div ke level me hai aur wo bhi immediate wala bs  */
+            div+p{
+                background-color:gray;
+            }
+            /* for jo div ke level me hai mtlb all jo level me hai  */
+            div~p{
+                background-color: skyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Descendent Selector</h2>
+        <div>
+            <p>paragraph 1 in div</p>
+            <p>paragraph 2 in div</p>
+            <section>
+                <p>paragraph 3 in div-section</p>
+            </section>
+        </div>
+        <p>paragraph 4 immediately after div</p>
+        <p>paragraph 5 after div</p>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+
+        /* p:first-child{
+            background-color:yellow;
+        } */
+        div:nth-child(2){
+            background-color: red;
+        }
+        li:nth-child(odd){
+            background-color: blue;
+        }
+        /* we can use here :nth-child(even , odd, or any number) also :nth-last-child(even , odd, or any number) */
+        input:focus{
+            background: rgb(134, 161, 134);
+        }
+    </style>
+    </head>
+    <body>
+        <input placeholder="please type your Name">
+        <div>
+            <p>this is some text</p>
+        </div>
+        <div>
+            <p>this is some text</p>
+        </div>
+        <div>
+            <p>this is some text</p>
+        </div><br>
+        <ul>
+            <li> First list item</li>
+            <li> Second list item</li>
+            <li> Third list item</li>
+            <li> Fourth list item</li>
+        </ul><br>
+        <div>
+            <p>This is a first child of paragraph</p>
+            <p>This is a Second child of paragraph</p>
+            <p>This is a Third child of paragraph</p>
+        </div>
+    </body>
+</html>
