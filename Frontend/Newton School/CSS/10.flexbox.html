@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fcontainer{
+            display: flex;
+            border: 2px solid grey;
+            height: 45vh;
+            /* flex-direction:column-reverse;  in this you can also use row,row-reverse,column */
+             /* justify-content: flex-start;    we can also use this 2*/
+             /* justify-content: flex-end; */
+             flex-wrap: wrap;    /* this is for when we resize the window element will manager accordingly*/
+             /* flex-wrap: wrap-reverse;  */
+             justify-content: center;
+             align-items: center;
+        }
+        .fitem{
+            background-color: red;
+            border: 2px solid black ;
+            margin: 12px;
+            width: 122px;
+            height: 122px;
+        }
+        .item1{
+           /* order: 3;  */
+           /* flex-grow: 2; */
+           /* flex-shrink: 2; */
+        }
+    </style>
+</head>
+<body>
+    <div class="fcontainer">
+        <div class="fitem item1">1</div>
+        <div class="fitem item2">2</div>
+        <div class="fitem item3">3</div>
+        <div class="fitem item4">4</div>
+    </div>
+</body>
+</html>
