@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+  font-family: "Red Hat Display", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--Pale-blue);
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.card {
+  background-color: white;
+  width: 400px;
+  border-radius: 1rem;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+.header img {
+  border-radius: 1rem 1rem 0 0;
+}
+.main {
+  padding: 1.5rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.title {
+  color: var(--Dark-blue);
+}
+.content {
+  color: var(--Desaturated-blue);
+  font-weight: 500;
+}
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--Very-pale-blue);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.plan div {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.plan-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.plan-info b {
+  color: var(--Dark-blue);
+}
+.plan-info span {
+  color: var(--Desaturated-blue);
+}
+.link {
+  text-decoration: underline;
+  color: var(--Bright-blue);
+  font-weight: 700;
+  cursor: pointer;
+}
+.link:hover {
+  text-decoration: none;
+  opacity: 70%;
+}
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.btns button {
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+.pay-btn {
+  background-color: var(--Bright-blue);
+  color: white;
+}
+.pay-btn:hover {
+  opacity: 75%;
+}
+.cancel-btn {
+  color: var(--Desaturated-blue);
+  font-weight: 700;
+  background-color: white;
+}
+.cancel-btn:hover {
+  color: var(--Dark-blue);
+}
+@media screen and (max-width: 500px) {
+  body {
+    background-image: url("./images/pattern-background-mobile.svg");
+  }
+  .card {
+    width: 360px;
+  }
+}
