@@ -67,7 +67,7 @@ function print(value){      // ab print ko value mila aue wo ab value == hello p
                 var c = "Myself Anand";
                 console.log(a+b+c);
                 three();
-            }
+            }+
          }
 
          function three(){
